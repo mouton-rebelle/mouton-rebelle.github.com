@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1380px) {
+  #container{
+    margin:0;
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  .corner #me, #me{
+    top:0%;
+    @include border-radius(0);
+    left:0;
+    padding:0;
+    width:100%;
+    height:auto;
+  }
+  header{
+    height:7em;
+    top:7.3em;
+  }
+  .corner header{
+    top:4.9em;
+  }
+  #main{
+    margin-top: 16em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #me{
+    right:0%;
+    font-size:1.4em;
+    p{
+      display:none;
+    }
+    h1{
+      @include rem(30);
+      @include transition-property(all);
+      @include transition-duration(1s);
+    }
+    @include rem(16);
+  }
+  .bloc{
+    margin: 0.5em;
+    padding: 1em 0.1em;
+    li{
+      margin-left:0;
+    }
+  }
+  .main, .related{
+    float: none;
+    width:100%;
+    padding-left:0;
+  }
+  .related{
+    margin-top: 1.5em!important;
+  }
+  header, .corner header{
+    top:3.3em;
+    a{
+      @include rem(12);
+      padding:0.2em 0.1em;
+      &:hover,&:active,&.on{
+        padding:0.4em 0.1em;
+      }
+    }
+    ul{
+      text-align: center;
+    }
+    li{
+      width:auto;
+      float:none;
+      display:inline-block
+    }
+  }
+
+}
