@@ -1,0 +1,86 @@
+// I gather this file is a starting point for the project.
+
+$basecolor : #1457b2;
+
+$navbarBackground: darken($basecolor,20%);
+$navbarBackgroundHighlight:$basecolor;
+$navbarLinkColor:lighten($basecolor,40%);
+@import "bootstrap";
+@import 'compass/css3';
+
+body{
+  padding-top:60px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+h2, a{
+  color:$basecolor;
+}
+
+// Include responsive Bootstrap styles
+@import "bootstrap-responsive";
+
+#contact{
+  padding-bottom:90em;
+}
+.indent{
+  margin-left:1em;
+}
+#ordre{
+  text-align: center;
+  width:197px;
+}
+.face, .face-container{
+  height:168px;
+  width:197px;
+  overflow:hidden;
+  @include transition-property(opacity);
+  @include transition-duration(0.6s);
+}
+.face-container{
+
+}
+
+.txt-container{
+  height:30px;
+  width:197px;  
+  overflow:hidden;
+  position:relative;
+}
+.face{
+  background-image:url(/images/id.jpg);
+  @include opacity(0);
+  // @include transform-style();
+  // @include backface-visibility();
+  // @include rotateY(-180deg);
+  position:absolute;
+  &.active{
+    // @include rotateY(0deg);
+    @include opacity(1);
+  }
+}
+#duck{
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+#serious{
+  background-position: bottom left; 
+}
+#smile{
+  background-position: center left; 
+}
+
+.txt{
+  @include transition-property(margin-top);
+  @include transition-duration(1s);
+  background:#F5F5F5;
+  text-align: center;
+  width:197px;
+  position:absolute;
+  margin-top:-30px;
+  &.active{
+    margin-top:0;
+  }
+
+}
