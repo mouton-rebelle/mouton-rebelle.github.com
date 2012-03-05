@@ -11,7 +11,7 @@
       if (active === 3) active = 0;
       $('#' + ids[active]).addClass('active');
       return $('#txt-' + ids[active]).addClass('active');
-    }), 4000);
+    }), 3000);
   });
 
 }).call(this);
