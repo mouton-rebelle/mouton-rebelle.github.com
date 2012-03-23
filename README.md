@@ -21,7 +21,7 @@ CV en ligne (plus complet) ~> http://cf.eg0.me
   * Javascript, jQuery, Ext, Sencha Touch, Phone Gap, Coffee Script
 
 * Intégration : 
-  * CSS, Sass & Compass
+  * HTML5, CSS3, Sass & Compass
   * Responsive webdesign, progressive enhancement
   * SPIP (CMS)
 
